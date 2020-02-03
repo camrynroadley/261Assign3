@@ -1,0 +1,77 @@
+html
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+
+body
+{
+    font-size: calc(14px + 0.5vw);
+}
+
+header h1 {
+    font-size: calc(30px + 0.5vw);
+}
+
+header img{
+    width: 100px;
+    height: 100px;
+}
+
+section .images img{
+    height: 300px;
+    width: 400px;
+}
+
+nav a {
+    float: right;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: calc(16px + 0.5vw);
+    font-weight: bold;
+}
+
+/* First child selector */
+nav a:first-child 
+{
+    color: cornflowerblue;
+}
+
+/* First child, first letter selector */
+nav a:first-child:first-letter 
+{
+    color: mediumpurple;
+}
+
+/* "New" CSS selector #2 */
+nav a[href="https://sitdownandeat.com/"] 
+{
+    color: hsla(100, 55%, 32%, 1);
+}
+
+/* ID selector */
+#breakfast {
+    background-color: lightgoldenrodyellow;
+}
+
+#lunch
+{
+    background-color:lightsteelblue;
+}
+
+#dinner {
+    background-color: lightgrey;
+}
+
+
+/* Hover */
+nav a:hover {
+    color: rgba(255, 0, 0, 1);
+}
+
+/* Focus */
+nav a:focus {
+    color: hotpink;
+}
